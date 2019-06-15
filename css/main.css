@@ -1,6 +1,7 @@
 ﻿@charset "utf-8";
 
 .a-text{
-    display: block;
-    color: hotpink;
-}
+    margin: 0 auto;
+    width: 300px;
+    background-color: #ccc;
+  }
