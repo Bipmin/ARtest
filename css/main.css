@@ -1,7 +1,5 @@
 ﻿@charset "utf-8";
 
 .a-text{
-    margin: 0 auto;
-    width: 300px;
-    background-color: #ccc;
+    color: blue;
   }
