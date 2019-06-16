@@ -18,7 +18,7 @@ const animate = () => {
   const position = `0 ${1.5 +  variation} -2`;
   const rotation = `-90 0 ${degrees}`;
 
-  sphere.setAttribute('color', blue);
+  sphere.setAttribute('color', color);
   sphere.setAttribute('position', position);
 
   // plane.setAttribute('color', color);
