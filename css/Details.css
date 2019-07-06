@@ -34,18 +34,18 @@ footer{
   background-color: rgb(228, 0, 17);
 }
 .headerLogo_box{
-  height: 60px;
+  height: 70px;
 }
 
 .headerLogo{
-  width: 50%;
-  height: 60px;
+  width: 55%;
+  height: 70px;
 }
 
 .headerIphone{
   float: right;
-  width: 25%;
-  height: 60px;
+  width: 30%;
+  height: 70px;
   margin-right: 20px;
 }
 
@@ -54,7 +54,7 @@ footer{
 }
 
 .footerLogo{
-  width: 50%;
+  width: 60%;
   height: 60px;
   display: block;
   margin: auto;
@@ -63,7 +63,7 @@ footer{
 .copyright{
   text-align: center;
   color: #fff;
-  font-size: 0.4rem;
+  font-size: 0.7rem;
 }
 
 .copyrightText{
@@ -71,16 +71,16 @@ footer{
 }
 
 .VRacademyLink{
-  line-height: 18px;
-  height: 18px;
-  font-size: .4rem;
-  width: 30%;
+  line-height: 21px;
+  height: 20px;
+  font-size: .8rem;
+  width: 35%;
   margin: 0 auto ;
   border: 1.5px solid #fff;
   border-radius: 1rem;
   text-align: center;
   color: #fff;
-  margin-bottom: 10px;
+  margin: 10px auto;
 }
 
 .TopicsFont{
