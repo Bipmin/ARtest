@@ -5,7 +5,7 @@
 <!-- AR.js ライブラリの読み込み -->
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
 <!-- HTML要素をA-Frame内に配置するスクリプト -->
-<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
+<script src="./js/aframe-html-shader.js"></script>
 
 <link rel="stylesheet" href="./css/main.css">
 <body style='margin:0px; overflow:hidden;'>
@@ -18,17 +18,18 @@
              <img id="jelly-thumb" src="targets/video-target.jpg">
         </a-assets>
     <!-- ARマーカー上になにを展開するかを書く -->
-    <a-marker preset="hiro">
-    <div style="width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: -1; overflow: hidden">
-        <p id="element">html要素をA-Frame内に配置する</p>
-    </div>
-    <a-sky src="#sky" rotation="0 170 0"></a-sky>
-	<a-entity geometry="primitive: plane; width: 1" position="-1 1.5 -2" material="shader: html; target: #element" rotation="0 -2 0"></a-entity>
-        </a-marker>
+        <a-marker preset="hiro">
+                <div style="width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: -1; overflow: hidden">
+                        <p id="element" style="font-size:15em;">html要素をA-Frame内に配置する</p>
+                    </div>
+                    <a-sky src="#sky" rotation="0 170 0"></a-sky>
+                    <a-entity geometry="primitive: plane; width: 1" position="-1 1.5 -2" material="shader: html; target: #element" rotation="0 -2 0"></a-entity>
+                       </a-marker>
             <!-- カメラ起動 -->
-            <a-entity camera></a-entity>
-    </a-scene>
-    <script src="./js/main.js"></script>
+            <a-entity camera look-controls>
+                    <a-entity geometry="primitive: plane; height: 0.2; width: 0.2" position="0 0 -1"
+                              material="color: gray; opacity: 0.5"></a-entity>
+                  </a-entity>    </a-scene>
     <!-- A-FrameEnd -->
 </body>
 </html>
