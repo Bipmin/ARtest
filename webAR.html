@@ -8,7 +8,7 @@
 <!-- A-Frame ライブラリの読み込み -->
 <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
 <!-- AR.js ライブラリの読み込み -->
-<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
 <!-- HTML要素をA-Frame内に配置するスクリプト -->
 <script src="./js/aframe-html-shader.min.js"></script>
 
@@ -29,16 +29,15 @@
         <!-- オブジェクトファイルとマテリアルファイルを読み込む -->
         <a-assets>
         </a-assets>
-        <a-entity class="link-object" geometry="primitive: plane; width: 1.5 height: 1.5" position="0 1 0" material="shader: html; target: #commentFrame" rotation="-90 0 0" style="z-index: 99;"></a-entity>
     <!-- ARマーカー上になにを展開するかを書く -->
         <a-marker preset="hiro">
-                    <a-entity class="link-object" geometry="primitive: plane; width: 1.5 height: 1.5" position="0 1 0" material="shader: html; target: #element" rotation="-90 0 0" style="z-index: 50;"></a-entity>
+                    <a-entity class="link-object" geometry="primitive: plane; width: 1.5 height: 1.5" position="0 1 0" material="shader: html; target: #element" rotation="-90 0 0" style="z-index: 80;"></a-entity>
                     <a-entity class="link-object" geometry="primitive: plane; width: 2.5" position="1.8 1.8 -4" material="shader: html; target: #element2" rotation="0 2 0"></a-entity>                
                     <a-text value="a-text" position="0 1.3 0" rotation="-90 0 0" align="center"></a-text>
                 </a-marker>
             <!-- カメラ起動 -->
-            <!-- <a-entity camera>
-            </a-entity> -->
+            <a-entity camera>
+            </a-entity>
         </a-scene>
     <!-- A-FrameEnd -->
 </body>
