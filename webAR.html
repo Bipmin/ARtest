@@ -8,15 +8,15 @@
 <script src="./js/aframe-html-shader.min.js"></script>
 
 <body>
-        <div style="width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: -4; overflow: hidden">
-                <p id="element" style="font-size:5em; padding: 10%; text-align:center; position:absolute;">制作事例に飛ぶ</p>
-                <p id="element2" style="font-size:5em; padding: 10%; text-align:center; position:absolute;">ブログ記事一覧に飛ぶ</p>
-            </div>        
    
     <!-- A-FrameStart -->
     <a-scene embedded arjs="debugUIEnabled:false;">
         <!-- オブジェクトファイルとマテリアルファイルを読み込む -->
         <a-assets>
+                <div style="width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: -4; overflow: hidden">
+                        <p id="element" style="font-size:5em; padding: 10%; text-align:center; position:absolute;">制作事例に飛ぶ</p>
+                        <p id="element2" style="font-size:5em; padding: 10%; text-align:center; position:absolute;">ブログ記事一覧に飛ぶ</p>
+                    </div>        
             <a-text class="a-text" value="Hello YouTube！!！"  position="0 1.3 0" align="center"></a-text>
         </a-assets>
     <!-- ARマーカー上になにを展開するかを書く -->
