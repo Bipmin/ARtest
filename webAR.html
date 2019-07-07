@@ -1,48 +1,37 @@
 ﻿<!doctype HTML>
 <html>
 <!-- A-Frame ライブラリの読み込み -->
-<script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+<script src="https://aframe.io/releases/0.7.1/aframe.js"></script>
 <!-- AR.js ライブラリの読み込み -->
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
 <!-- HTML要素をA-Frame内に配置するスクリプト -->
 <script src="./js/aframe-html-shader.min.js"></script>
 
-<link rel="stylesheet" href="./css/main.css">
-<body style='margin:0px; overflow:hidden;'>
+<body>
+
+        <div style="width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: -4; overflow: hidden">
+                <p id="element" style="font-size:5em; padding: 10%; text-align:center; position:absolute;">制作事例に飛ぶ</p>
+                <p id="element2" style="font-size:5em; padding: 10%; text-align:center; position:absolute;">ブログ記事一覧に飛ぶ</p>
+            </div>
+            
     <!-- A-FrameStart -->
-    <a-scene embedded arjs="debugUIEnabled:false;trackingMethod:best;" vr-mode-ui="enabled: false">
+    <a-scene>
         <!-- オブジェクトファイルとマテリアルファイルを読み込む -->
         <a-assets>
-                <a-marker preset="hiro">
-                        <a-box position ="0 1 0">
-                            <a-animation attribute="rotation"
-                                         to="0 360 0"
-                                         dur="4000"
-                                         repeat="indefinite"
-                                         easing="linear">
-                            </a-animation>
-                        </a-box>
-                        <a-sphere color ="blue"></a-sphere>
-                        <a-sphere color ="#000"></a-sphere>
-                        <a-obj-model id="santa" src="#santa-obj" mtl="#santa-mtl" position="0 0 0" scale="0.5 0.5 0.5" rotation="0 0 0"></a-obj-model>
                 <a-text class="a-text" value="Hello YouTube！!！"  position="0 1.3 0" align="center"></a-text>
-            <a-asset-item id="santa-obj" src="model_obj/santa/santa.obj"></a-asset-item>
-             <a-asset-item id="santa-mtl" src="model_obj/santa/santa.mtl"></a-asset-item>
-             <img id="jelly-thumb" src="targets/video-target.jpg">
         </a-assets>
     <!-- ARマーカー上になにを展開するかを書く -->
         <a-marker preset="hiro">
-                <div style="width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: -3; overflow: hidden">
-                        <p id="element" style="font-size:5em; padding: 10%; text-align:center; position:absolute;">html要素をA-Frame内に配置する</p>
-                    </div>
-                    <a-sky src="#sky" rotation="0 170 0"></a-sky>
-                    <a-entity geometry="primitive: plane; width: 1" position="-1 1.5 -2" material="shader: html; target: #element" style="z-index: -3;" rotation="0 -2 0"></a-entity>
-                       </a-marker>
+                    <a-entity class="link-object" data-link="https://magnets.jp/portfolio/" geometry="primitive: plane; width: 2.5" position="-7 0 -8" material="shader: html; target: #element" rotation="2 85 0"></a-entity>
+                    <a-entity class="link-object" data-link="https://magnets.jp/blog/" geometry="primitive: plane; width: 2.5" position="1.8 1.8 -4" material="shader: html; target: #element2" rotation="0 2 0"></a-entity>                
+                </a-marker>
             <!-- カメラ起動 -->
             <a-entity camera look-controls>
                     <a-entity geometry="primitive: plane; height: 0.2; width: 0.2" position="0 0 -1"
-                    id="sky" material="color: gray; opacity: 0.5" style="z-index: 0;"></a-entity>
-                  </a-entity>    </a-scene>
+                    id="sky" material="color: gray; opacity: 0.5" style="z-index: 0;">
+            </a-entity>
+                
+        </a-scene>
     <!-- A-FrameEnd -->
 </body>
 </html>
