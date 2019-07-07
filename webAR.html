@@ -19,16 +19,16 @@
         </a-assets>
     <!-- ARマーカー上になにを展開するかを書く -->
         <a-marker preset="hiro">
-                <div style="width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: -99; overflow: hidden">
-                        <p id="element" style="font-size:15em;">html要素をA-Frame内に配置する</p>
+                <div style="width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: -3; overflow: hidden">
+                        <p id="element" style="font-size:5em; padding: 10%; text-align:center; position:absolute;">html要素をA-Frame内に配置する</p>
                     </div>
                     <a-sky src="#sky" rotation="0 170 0"></a-sky>
-                    <a-entity geometry="primitive: plane; width: 1" position="-1 1.5 -2" material="shader: html; target: #element" rotation="0 -2 0"></a-entity>
+                    <a-entity geometry="primitive: plane; width: 1" position="-1 1.5 -2" material="shader: html; target: #element" style="z-index: -3;" rotation="0 -2 0"></a-entity>
                        </a-marker>
             <!-- カメラ起動 -->
             <a-entity camera look-controls>
                     <a-entity geometry="primitive: plane; height: 0.2; width: 0.2" position="0 0 -1"
-                    id="sky" material="color: gray; opacity: 0.5" style="z-index: 99;"></a-entity>
+                    id="sky" material="color: gray; opacity: 0.5" style="z-index: 0;"></a-entity>
                   </a-entity>    </a-scene>
     <!-- A-FrameEnd -->
 </body>
