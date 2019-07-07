@@ -21,6 +21,14 @@
         <!-- オブジェクトファイルとマテリアルファイルを読み込む -->
         <a-assets>
         </a-assets>
+        <div class="Frame_box">
+            <td>
+                <p id="commentFrame" class="commentFrame">コメント一覧</p>
+            </td>
+            <td>
+                <p class="detailsFrame clearfix">明細ページ</p>
+            </td>
+        </div>
     <!-- ARマーカー上になにを展開するかを書く -->
         <a-marker preset="hiro">
                     <a-entity class="link-object" geometry="primitive: plane; width: 1.5 height: 1.5" position="0 1 0" material="shader: html; target: #element" rotation="-90 0 0" style="z-index: 80;"></a-entity>
@@ -31,14 +39,6 @@
             <a-entity camera>
             </a-entity>
         </a-scene>
-        <div class="Frame_box">
-            <td>
-                <p id="commentFrame" class="commentFrame">コメント一覧</p>
-            </td>
-            <td>
-                <p class="detailsFrame clearfix">明細ページ</p>
-            </td>
-        </div>
     <!-- A-FrameEnd -->
 </body>
 </html>
