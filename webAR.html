@@ -3,7 +3,7 @@
 <!-- A-Frame ライブラリの読み込み -->
 <script src="https://aframe.io/releases/0.7.1/aframe.js"></script>
 <!-- AR.js ライブラリの読み込み -->
-<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
+<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
 <!-- HTML要素をA-Frame内に配置するスクリプト -->
 <script src="./js/aframe-html-shader.min.js"></script>
 
@@ -15,16 +15,16 @@
             </div>
             
     <!-- A-FrameStart -->
-    <a-scene>
+    <a-scene embedded arjs="debugUIEnabled:false;">
         <!-- オブジェクトファイルとマテリアルファイルを読み込む -->
         <a-assets>
                 <a-text class="a-text" value="Hello YouTube！!！"  position="0 1.3 0" align="center"></a-text>
         </a-assets>
     <!-- ARマーカー上になにを展開するかを書く -->
         <a-marker preset="hiro">
-                    <a-entity class="link-object" data-link="https://magnets.jp/portfolio/" geometry="primitive: plane; width: 2.5" position="-7 0 -8" material="shader: html; target: #element" rotation="2 85 0"></a-entity>
+                    <a-entity class="link-object" data-link="https://magnets.jp/portfolio/" geometry="primitive: plane; width: 100.5 height: 100.5" position="0 1 0" material="shader: html; target: #element" rotation="0 0 0" style="z-index: 99;"></a-entity>
                     <a-entity class="link-object" data-link="https://magnets.jp/blog/" geometry="primitive: plane; width: 2.5" position="1.8 1.8 -4" material="shader: html; target: #element2" rotation="0 2 0"></a-entity>                
-                </a-marker>
+        </a-marker>
             <!-- カメラ起動 -->
             <a-entity camera look-controls>
                     <a-entity geometry="primitive: plane; height: 0.2; width: 0.2" position="0 0 -1"
