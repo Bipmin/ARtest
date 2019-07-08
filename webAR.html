@@ -30,7 +30,7 @@
             <!-- カメラ起動 -->
             <a-entity camera>
             </a-entity>
-            <div class="Frame_box">
+            <div id="commentFrame" class="Frame_box">
                 <td>
                     <p id="commentFrame" class="commentFrame">コメント一覧</p>
                 </td>
@@ -38,6 +38,7 @@
                     <p class="detailsFrame">明細ページ</p>
                 </td>
             </div>
+            <a-entity class="link-object" geometry="primitive: plane; width: 1.5 height: 1.5" position="0 -200 0" material="shader: html; target: #commentFrame" rotation="-90 0 0" style="z-index: 80;"></a-entity>
         </a-scene>
     <!-- A-FrameEnd -->
 </body>
