@@ -12,11 +12,11 @@
     z-index: 99;
     position: fixed;
     left: 0;
-    top: 60%;
+    top: 70%;
 }
 
 .commentFrame{
-    line-height: 100px;
+    line-height: 60px;
     overflow: hidden;
     display: inline-block;
     font-size: 1rem;
@@ -27,6 +27,7 @@
     border-radius: 0.6rem;
     text-align: center;
     background-color: #fff;
+    color: #ff0013;
     z-index: 99;
 }
 
