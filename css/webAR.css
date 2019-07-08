@@ -16,7 +16,7 @@
 }
 
 .commentFrame{
-    line-height: 30px;
+    line-height: 100px;
     overflow: hidden;
     display: inline-block;
     font-size: 1rem;
@@ -27,7 +27,6 @@
     border-radius: 0.6rem;
     text-align: center;
     background-color: #fff;
-    color: #ff0013;
     z-index: 99;
 }
 
