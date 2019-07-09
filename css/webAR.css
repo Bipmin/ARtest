@@ -1,9 +1,12 @@
 ﻿@charset "utf-8";
 
-.clearfix::after{
-    content: "";
-    display: block;
-    clear: both;
+
+.exhibitorImg_box{
+}
+
+.exhibitorImg{
+    width: 35%;
+    height: 180px;
 }
 
 .Frame_box{
@@ -12,7 +15,7 @@
     z-index: 99;
     position: fixed;
     left: 0;
-    top: 80%;
+    top: 90%;
 }
 
 .commentFrame{
