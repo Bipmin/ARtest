@@ -2,9 +2,9 @@
 
 
 .roundFrame{
-    line-height: 40px;
+    line-height: 20px;
     display: inline-block;
-    font-size: 1rem;
+    font-size: 1.5rem;
     width: 200px;
     padding: .6rem 0;
     border: 1.5px solid #ff0013;
