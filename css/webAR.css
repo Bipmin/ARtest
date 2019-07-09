@@ -18,6 +18,16 @@
     top: 90%;
 }
 
+.commentFrame:active{
+    background-color: #ff0013;
+    color: #fff;
+}
+
+.detailsFrame:active{
+    background-color: #ff0013;
+    color: #fff;
+}
+
 .commentFrame{
     line-height: 45px;
     display: inline-block;
