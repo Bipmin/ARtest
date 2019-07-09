@@ -24,7 +24,7 @@
     <!-- ARマーカー上になにを展開するかを書く -->
         <a-marker preset="hiro">
                     <a-entity class="link-object" geometry="primitive: plane; width: 1.5 height: 1.5" position="0 1 0" material="shader: html; target: #element" rotation="-90 0 0" style="z-index: 80;"></a-entity>
-                    <a-text value="a-text" position="0 1.3 0" rotation="-90 0 0" align="center"></a-text>
+                    <a-text value="a-text" class="commentFrame" position="0 1.3 0" rotation="-90 0 0" align="center"></a-text>
                     <a-image id="exhibitorImg" class="exhibitorImg" src="./images/VRPA_1.jpg" alt="contents"></a-image>
         </a-marker>
             <!-- カメラ起動 -->
@@ -38,7 +38,7 @@
                     <a href="https://bipmin.github.io/ARtest/Details.html"><p ontouchstart="" class="detailsFrame">明細ページ</p></a>
                 </td>
             </div>
-            <a-entity class="link-object" geometry="primitive: plane; width: 1.5 height: 1.5" position="0 -200 0" material="shader: html; target: #commentFrame" rotation="-90 0 0" style="z-index: 80;"></a-entity>
+            <!-- <a-entity class="link-object" geometry="primitive: plane; width: 1.5 height: 1.5" position="0 -200 0" material="shader: html; target: #commentFrame" rotation="-90 0 0" style="z-index: 80;"></a-entity> -->
         </a-scene>
     <!-- A-FrameEnd -->
 </body>
