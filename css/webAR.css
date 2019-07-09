@@ -1,8 +1,21 @@
 ﻿@charset "utf-8";
 
 
-.exhibitorImg_box{
+.roundFrame{
+    line-height: 45px;
+    display: inline-block;
+    font-size: 3rem;
+    width: 120px;
+    padding: .6rem 0;
+    margin: 0 0 0 5%;
+    border: 1.5px solid #ff0013;
+    border-radius: 0.6rem;
+    text-align: center;
+    background-color: #fff;
+    color: #ff0013;
+    z-index: 99;
 }
+
 
 .exhibitorImg{
     width: 35%;
