@@ -14,7 +14,7 @@
 
 <body>
          <div style="width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: -4; overflow: hidden">
-                <p id="element"  class="roundFrame">pタグtext</p>
+                <p id="element" style="font-size:2em; padding: 15%; background-color: #fff; color: #ff0013;">pタグtext</p>
         </div>
     <!-- A-FrameStart -->
     <a-scene embedded arjs="debugUIEnabled:false;trackingMethod:best;" vr-mode-ui="enabled: false">
@@ -23,7 +23,7 @@
         </a-assets>
     <!-- ARマーカー上になにを展開するかを書く -->
         <a-marker preset="hiro">
-                    <a-entity class="link-object" style="font-size:2em; padding: 15%; background-color: #fff; color: #ff0013;" geometry="primitive: plane; width: 1.5 height: 1.5" position="0 1 0" material="shader: html; target: #element" rotation="-80 0 0" style="z-index: 80;"></a-entity>
+                    <a-entity class="link-object" geometry="primitive: plane; width: 1.5 height: 1.5" position="0 1 0" material="shader: html; target: #element" rotation="-80 0 0" style="z-index: 80;"></a-entity>
                     <a-text value="a-text" position="0 1.3 0" rotation="-80 0 0" align="center"></a-text>
                     <a-image id="exhibitorImg" class="exhibitorImg" src="./images/VRPA_1.jpg" alt="contents"></a-image>
         </a-marker>
