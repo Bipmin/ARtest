@@ -11,8 +11,6 @@
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
 <!-- HTML要素をA-Frame内に配置するスクリプト -->
 <script src="./js/aframe-html-shader.min.js"></script>
-<script src="./js/aframe.min.js"></script>
-<script src="./js/html2canvas.min.js"></script>
 
 <body>
         
@@ -26,7 +24,7 @@
         </a-assets>
     <!-- ARマーカー上になにを展開するかを書く -->
         <a-marker preset="hiro">
-                    <a-entity class="link-object" geometry="primitive: plane; width: 2 height: 1" position="0 0 0" material="shader: html; target: #element" rotation="-80 0 0" style="z-index: 80;"></a-entity>
+                    <!-- <a-entity class="link-object" geometry="primitive: plane; width: 2 height: 1" position="0 0 0" material="shader: html; target: #element" rotation="-80 0 0" style="z-index: 80;"></a-entity> -->
                     <!-- 展示者名 -->
                     <a-plane width: "16" height: "10" position="0.5 0 0" material="shader: html; target: #element" rotation="-90 0 0" style="z-index: 80;"></a-plane>
                     <!-- コンテンツ名 -->
