@@ -174,19 +174,18 @@ footer{
 .contentsText{
   font-size: 1rem;
   width: 80%;
+  min-height: 70px;
   padding: .1rem 0;
   margin: 0 auto  0;
   border: 1.5px solid ;
   border-radius: 1rem;
   background-color: #fff;
-  height: 70px;
   width: 300px;
   word-wrap:break-word;
   line-height: 1rem;
   text-align: left;
   padding: 5px 0px 5px 8px;
-  overflow-y : scroll;
-  max-height: 100px;
+  overflow-y : visible;
 }
 
 .exhibitor_box{
@@ -231,11 +230,11 @@ footer{
   border: 1.5px solid #ff0013;
   background-color: #fff;
   width: 210px;
-  height: 95px;
+  min-height: 95px;
   word-wrap:break-word;
   line-height: 1rem;
   padding: 3px 0px 2px 3px;
-  overflow:auto;
+  overflow-y : visible;
 }
 
 .bottomBotann{
