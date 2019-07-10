@@ -185,6 +185,8 @@ footer{
   line-height: 1rem;
   text-align: left;
   padding: 5px 0px 5px 8px;
+  overflow-y : scroll;
+  max-height: 100px;
 }
 
 .exhibitor_box{
@@ -233,6 +235,7 @@ footer{
   word-wrap:break-word;
   line-height: 1rem;
   padding: 3px 0px 2px 3px;
+  overflow:auto;
 }
 
 .bottomBotann{
