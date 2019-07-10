@@ -171,10 +171,6 @@ footer{
   max-width:100%;
 }
 
-.contentsText_box{
-  text-align: center;
-}
-
 .contentsText{
   font-size: 1rem;
   width: 80%;
@@ -187,8 +183,8 @@ footer{
   width: 300px;
   word-wrap:break-word;
   line-height: 1rem;
-  display: inline-block;
   text-align: left;
+  padding: 5px 0px 5px 8px;
 }
 
 .exhibitor_box{
@@ -236,6 +232,7 @@ footer{
   height: 95px;
   word-wrap:break-word;
   line-height: 1rem;
+  padding: 3px 0px 2px 3px;
 }
 
 .bottomBotann{
