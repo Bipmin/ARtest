@@ -55,7 +55,7 @@ footer{
 
 .footerLogo{
   width: 60%;
-  height: 60px;
+  height: 70px;
   display: block;
   margin: auto;
 }
@@ -80,7 +80,7 @@ footer{
   border-radius: 1rem;
   text-align: center;
   color: #fff;
-  margin: 10px auto;
+  margin: 15px auto;
 }
 
 .TopicsFont{
