@@ -101,6 +101,7 @@
 }
 
 .target {
+    z-index: -4;
     position: absolute;
     width: 320px;
     height: 200px;
@@ -118,6 +119,7 @@
 }
 
 .target>div {
+    z-index: -4;
     margin-left: 36%;
     width: 52%;
     padding: 4%;
