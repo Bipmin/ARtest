@@ -183,6 +183,7 @@ footer{
   width: 300px;
   word-wrap:break-word;
   line-height: 1rem;
+  text-align: center;
 }
 
 .exhibitor_box{
@@ -226,6 +227,7 @@ footer{
   height: 95px;
   word-wrap:break-word;
   line-height: 1rem;
+  text-align: center;
 }
 
 .bottomBotann{
