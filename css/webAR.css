@@ -30,7 +30,7 @@
     z-index: 99;
     position: fixed;
     left: 0;
-    top: 85%;
+    top: 87%;
 }
 
 .commentFrame:active{
@@ -74,7 +74,7 @@
 }
 
 .sendLikedButton {
-    margin: 0 0 0 10px;
+    margin: 0 0 0 20px;
     width: 80px;
     height: 80px;
     display: inline-block;
@@ -82,7 +82,7 @@
 }
 
 .sendNotLikedButton {
-    margin: 0 0 0 10px;
+    margin: 0 0 0 20px;
     width: 70px;
     height: 70px;
     display: inline-block;
