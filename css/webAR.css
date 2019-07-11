@@ -72,3 +72,24 @@
     color: #ff0013;
     z-index: 99;
 }
+
+.sendLikedButton {
+    margin: 0 0 0 10px;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    z-index: 99;
+}
+
+.sendNotLikedButton {
+    margin: 0 0 0 10px;
+    width: 110px;
+    height: 110px;
+    display: inline-block;
+    z-index: 99;
+}
+
+.displayNone {
+    display: none;
+}
+
