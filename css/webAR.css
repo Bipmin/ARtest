@@ -1,24 +1,20 @@
 ﻿@charset "utf-8";
 
 .target{
-    line-height: 20px;
-    display: block;
-    padding: .6rem 0;
-    border: 100.5px solid #ff0013;
+    display: inline-block;
+    padding: 10rem;
+    border: 1.5px solid #ff0013;
     border-radius: 10rem;
     text-align: center;
     background-color: #fff;
     color: #ff0013;
-    z-index: 99;
     width: 1600px;
     height: 1000px;
     font-size: 500%;
-    position: absolute;
 }
 
 .roundFrame{
-    margin-left: 36%;
-    width: 52%;
+    width: 20%;
 }
 
 .exhibitorImg{
