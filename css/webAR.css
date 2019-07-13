@@ -39,6 +39,9 @@
 
 .detailsFrame:active{
     background-color: #ff0013;
+}
+
+.detailsFrame>a:active{
     color: #fff;
 }
 
@@ -68,15 +71,12 @@
     border-radius: 0.6rem;
     text-align: center;
     background-color: #fff;
-    color: #ff0013;
     z-index: 99;
 }
 
-.Frame_box>a:active{
-    display: block;
-
+.detailsFrame>a{
+    color: #ff0013;
 }
-
 
 .sendLikedButton {
     margin: 0 0 0 20px;
