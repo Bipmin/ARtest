@@ -34,28 +34,28 @@ footer{
   background-color: rgb(228, 0, 17);
 }
 .headerLogo_box{
-  height: 70px;
+  height: 80px;
 }
 
 .headerLogo{
   width: 55%;
-  height: 70px;
+  height: 80px;
 }
 
 .headerIphone{
   float: right;
   width: 30%;
-  height: 70px;
+  height: 80px;
   margin-right: 20px;
 }
 
 .footerLogo_box{
-  height: 60px;
+  height: 80px;
 }
 
 .footerLogo{
   width: 60%;
-  height: 70px;
+  height: 80px;
   display: block;
   margin: auto;
 }
