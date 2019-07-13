@@ -37,7 +37,7 @@
                     <!-- コンテンツ名 -->
                     <a-plane width="0.7" height="0.4" position="0.4 0 0" material="shader: html; target: #element2" rotation="-100 0 0"></a-plane>
                     <!-- コンテンツの詳細 -->
-                    <a-plane width="0.5" height="0.4" position="0.4 0 1" material="shader: html; target: #element3" rotation="-100 0 0"></a-plane>
+                    <a-plane width="1.5" height="1.5" position="0.4 0 1" material="shader: html; target: #element3" rotation="-100 0 0"></a-plane>
                     <!-- 展示者写真-->
                     <a-image id="exhibitorImg" class="exhibitorImg" rotation="-90 0 0"  position="-0.5 0 0" src="./images/VRPA_1.jpg" alt="contents"></a-image>
         </a-marker>
@@ -45,12 +45,12 @@
             <a-entity camera>
             </a-entity>
             <div class="Frame_box">
-                <div class="Frame">
+                <div class="Frame" ontouchstart="">
                     <td>
                         <a href="https://bipmin.github.io/ARtest/Details.html" ontouchstart="">コメント一覧</a>
                     </td>
                 </div>
-                <div class="Frame detailsMagin">
+                <div class="Frame detailsMagin" ontouchstart="">
                     <td>
                         <a href="https://bipmin.github.io/ARtest/Details.html" ontouchstart="">明細ページ</a>
                     </td>

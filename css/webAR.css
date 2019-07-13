@@ -3,8 +3,8 @@
 
 .exhibitorName{
     padding: 7rem;
-    border: 40px solid #ff0013;
-    border-radius: 3rem;
+    border: 20px solid #ff0013;
+    border-radius: 5rem;
     text-align: center;
     background-color: #fff;
     color: #ff0013;
@@ -14,8 +14,8 @@
 
 .roundFrame{
     padding: 7rem;
-    border: 40px solid #ff0013;
-    border-radius: 3rem;
+    border: 20px solid #ff0013;
+    border-radius: 5rem;
     text-align: center;
     background-color: #fff;
     color: #ff0013;
@@ -25,13 +25,13 @@
 
 .contentsText{
     width: 2000px;
-    font-size: 500%;
+    font-size: 1500%;
     margin: 0 auto  0;
     border: 20px solid ;
-    border-radius: 2rem;
+    border-radius: 4rem;
     background-color: #fff;
     word-wrap:break-word;
-    line-height: 6rem;
+    line-height: 14rem;
     text-align: left;
     padding: 10px 0px 5px 10px;
     overflow-y : visible;
@@ -48,9 +48,11 @@
 
 .Frame:active{
     background-color: #ff0013;
+    color: #fff;
 }
 
 .Frame>a:active{
+    background-color: #ff0013;
     color: #fff;
 }
 
