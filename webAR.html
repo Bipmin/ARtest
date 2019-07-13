@@ -14,16 +14,16 @@
 
 <body>
         <!-- 展示者名 -->
-         <div id="element1" style="position: fixed; z-index: -4; overflow: hidden">
-                <p class="exhibitorName">作者名</p>
+        <div id="element1" style="position: fixed; z-index: -4; overflow: hidden">
+            <p class="exhibitorName">作者名</p>
         </div>
         <!-- コンテンツ名 -->
         <div id="element2" style="position: fixed; z-index: -4; overflow: hidden">
-                <p class="roundFrame">コンテンツ名</p>
+            <p class="roundFrame">コンテンツ名</p>
         </div>
         <!-- コンテンツの詳細 -->
         <div id="element3" style="position: fixed; z-index: -4; overflow: hidden">
-                <p class="contentsText">ああああああああああ</p>
+            <p class="contentsText">あああああああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
         </div>
     <!-- A-FrameStart -->
     <a-scene embedded arjs="debugUIEnabled:false;trackingMethod:best;" vr-mode-ui="enabled: false">
@@ -33,18 +33,19 @@
     <!-- ARマーカー上になにを展開するかを書く -->
         <a-marker preset="hiro">
                     <!-- 展示者名 -->
-                    <a-plane width="0.5" height="0.2" position="0.4 0 -0.5" material="shader: html; target: #element1" rotation="-100 0 0"></a-plane>
+                    <a-plane width="0.5" height="0.2" position="0.5 -0.5 -0.5" material="shader: html; target: #element1" rotation="-100 0 0"></a-plane>
                     <!-- コンテンツ名 -->
-                    <a-plane width="0.5" height="0.3" position="0.4 0 0" material="shader: html; target: #element2" rotation="-100 0 0"></a-plane>
+                    <a-plane width="0.5" height="0.3" position="-0.5 -0.5 0" material="shader: html; target: #element2" rotation="-100 0 0"></a-plane>
                     <!-- コンテンツの詳細 -->
-                    <a-plane width="1.2" height="1" position="0.4 0 1.5" material="shader: html; target: #element3" rotation="-100 0 0"></a-plane>
+                    <a-plane width="1.2" height="1" position="0 0 1.5" material="shader: html; target: #element3" rotation="-100 0 0"></a-plane>
                     <!-- 展示者写真-->
-                    <a-image width="1.2" height="1" class="exhibitorImg" rotation="-90 0 0"  position="-0.5 0 0" src="./images/VRPA_1.jpg" alt="contents"></a-image>
-
+                    <a-image width="1.2" height="0.1" class="exhibitorImg" rotation="-90 0 0"  position="-0.5 0 -1" src="./images/VRPA_1.jpg" alt="contents"></a-image>
+                    <!-- コンテンツの写真-->
+                    <a-image width="1.5" height="1" class="exhibitorImg" rotation="-90 0 0"  position="0.5 0 0" src="./images/VRPA_1.jpg" alt="contents"></a-image>
                 </a-marker>
             <!-- カメラ起動 -->
-            <a-entity camera>
-            </a-entity>
+            <a-entity camera></a-entity>
+
             <div class="Frame_box">
                 <div class="Frame" ontouchstart="">
                     <td>
