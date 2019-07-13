@@ -238,18 +238,22 @@ footer{
   overflow-y : visible;
 }
 
+.bottomBotann_box{
+  text-align: center;
+  margin-bottom: 30px;  
+}
+
 .bottomBotann{
+  display: inline-block;
   line-height: 30px;
   height: 30px;
   font-size: .8rem;
   width: 60%;
-  margin: 0 auto ;
   border: 1.5px solid #ff0013;
   border-radius: 1rem;
   text-align: center;
   background-color: #fff;
   color: #ff0013;
-  margin-bottom: 30px;
 }
 
 .bottomBotann:active{
