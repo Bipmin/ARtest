@@ -39,16 +39,20 @@
             <a-entity camera>
             </a-entity>
             <div id="commentFrame" class="Frame_box">
-                <td>
-                    <p ontouchstart="" id="commentFrame" class="commentFrame">コメント一覧</p>
-                </td>
-                <td>
-                    <a href="https://bipmin.github.io/ARtest/Details.html" ontouchstart="" ><p class="detailsFrame">明細ページ</p></a>
-                </td>
-                <td>
-                    <input type="image"  class="sendLikedButton displayNone" src="./images/heart.png" />
-                    <input type="image"  class="sendNotLikedButton" src="./images/heart.png" />
-                </td>
+                <div id="commentFrame" class="commentFrame">
+                    <td>
+                        <p ontouchstart="">コメント一覧</p>
+                    </td>
+                </div>
+                <div id="commentFrame"  class="detailsFrame">
+                    <td>
+                        <a href="https://bipmin.github.io/ARtest/Details.html" ontouchstart="" ><p>明細ページ</p></a>
+                    </td>
+                </div>
+                    <td>
+                        <input type="image"  class="sendLikedButton displayNone" src="./images/heart.png" />
+                        <input type="image"  class="sendNotLikedButton" src="./images/heart.png" />
+                    </td>
             </div>
             <!-- <a-entity class="link-object" geometry="primitive: plane; width: 1.5 height: 1.5" position="0 -200 0" material="shader: html; target: #commentFrame" rotation="-90 0 0" style="z-index: 80;"></a-entity> -->
         </a-scene>
