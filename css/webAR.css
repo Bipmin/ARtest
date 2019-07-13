@@ -73,8 +73,8 @@
 }
 
 .Frame_box>a:active{
-    background-color: #ff0013;
-    color: #fff;
+    display: block;
+
 }
 
 
