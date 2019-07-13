@@ -22,18 +22,18 @@
     background-color: #fff;
     color: #ff0013;
     width: 2000px;
-    font-size: 1800%;
+    font-size: 1900%;
 }
 
 .contentsText{
     width: 2000px;
-    font-size: 1600%;
+    font-size: 1500%;
     min-height: 500px;
     border: 20px solid ;
     border-radius: 4rem;
     background-color: #fff;
     word-wrap:break-word;
-    line-height: 13rem;
+    line-height: 14rem;
     text-align: left;
     padding: 10px 0px 5px 10px;
     overflow-y : visible;
