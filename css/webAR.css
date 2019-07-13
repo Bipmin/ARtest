@@ -72,6 +72,12 @@
     z-index: 99;
 }
 
+.Frame_box>a:active{
+    background-color: #ff0013;
+    color: #fff;
+}
+
+
 .sendLikedButton {
     margin: 0 0 0 20px;
     width: 80px;
