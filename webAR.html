@@ -13,11 +13,17 @@
 <script src="./js/aframe-html-shader.min.js"></script>
 
 <body>
-         <div id="element1" class="target" style="position: fixed; z-index: -4; overflow: hidden">
-                <p class="roundFrame">作者名</p>
+        <!-- 展示者名 -->
+         <div id="element1" style="position: fixed; z-index: -4; overflow: hidden">
+                <p class="exhibitorName">作者名</p>
         </div>
-        <div id="element2" class="target" style="position: fixed; z-index: -4; overflow: hidden">
+        <!-- コンテンツ名 -->
+        <div id="element2" style="position: fixed; z-index: -4; overflow: hidden">
                 <p class="roundFrame">コンテンツ名</p>
+        </div>
+        <!-- コンテンツの詳細 -->
+        <div id="element3" style="position: fixed; z-index: -4; overflow: hidden">
+                <p class="exhibitorText">コンテンツ名</p>
         </div>
     <!-- A-FrameStart -->
     <a-scene embedded arjs="debugUIEnabled:false;trackingMethod:best;" vr-mode-ui="enabled: false">
@@ -38,15 +44,15 @@
             <!-- カメラ起動 -->
             <a-entity camera>
             </a-entity>
-            <div id="commentFrame" class="Frame_box">
-                <div id="commentFrame" class="commentFrame">
+            <div class="Frame_box">
+                <div class="Frame">
                     <td>
-                        <p ontouchstart="">コメント一覧</p>
+                        <a href="https://bipmin.github.io/ARtest/Details.html" ontouchstart="">コメント一覧</a>
                     </td>
                 </div>
-                <div id="commentFrame"  class="detailsFrame">
+                <div class="Frame detailsMagin">
                     <td>
-                        <a href="https://bipmin.github.io/ARtest/Details.html" ontouchstart="" >明細ページ</a>
+                        <a href="https://bipmin.github.io/ARtest/Details.html" ontouchstart="">明細ページ</a>
                     </td>
                 </div>
                     <td>
