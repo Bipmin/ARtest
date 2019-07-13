@@ -5,7 +5,7 @@
     display: inline-block;
     padding: 7rem 10rem;
     border: 20px solid #ff0013;
-    border-radius: 5rem;
+    border-radius: 6rem;
     text-align: center;
     background-color: #fff;
     color: #ff0013;
@@ -17,7 +17,7 @@
     display: inline-block;
     padding: 7rem 10rem;
     border: 20px solid #ff0013;
-    border-radius: 5rem;
+    border-radius: 6rem;
     text-align: center;
     background-color: #fff;
     color: #ff0013;
@@ -27,7 +27,7 @@
 
 .contentsText{
     width: 2000px;
-    font-size: 1500%;
+    font-size: 1400%;
     min-height: 500px;
     border: 20px solid ;
     border-radius: 4rem;
