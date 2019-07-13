@@ -23,7 +23,7 @@
         </div>
         <!-- コンテンツの詳細 -->
         <div id="element3" style="position: fixed; z-index: -4; overflow: hidden">
-                <p class="contentsText">ああああああああああああああああああああああああああああああああああああああああああああ</p>
+                <p class="contentsText">ああああああああああ</p>
         </div>
     <!-- A-FrameStart -->
     <a-scene embedded arjs="debugUIEnabled:false;trackingMethod:best;" vr-mode-ui="enabled: false">
@@ -39,8 +39,9 @@
                     <!-- コンテンツの詳細 -->
                     <a-plane width="1.2" height="1" position="0.4 0 1.5" material="shader: html; target: #element3" rotation="-100 0 0"></a-plane>
                     <!-- 展示者写真-->
-                    <a-image class="exhibitorImg" rotation="-90 0 0"  position="-0.5 0 0" src="./images/VRPA_1.jpg" alt="contents"></a-image>
-        </a-marker>
+                    <a-image width="1.2" height="1" class="exhibitorImg" rotation="-90 0 0"  position="-0.5 0 0" src="./images/VRPA_1.jpg" alt="contents"></a-image>
+
+                </a-marker>
             <!-- カメラ起動 -->
             <a-entity camera>
             </a-entity>
