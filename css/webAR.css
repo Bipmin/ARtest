@@ -33,17 +33,17 @@
     border-radius: 4rem;
     background-color: #fff;
     word-wrap:break-word;
-    line-height: 14rem;
+    line-height: 5.5rem;
     text-align: left;
     padding: 10px 0px 5px 10px;
     overflow-y : visible;
 }
 
-.stash{
+/* .stash{
     background-color: #fff;
     width: 1000%;
     height: 1000%;
-}
+} */
 
 .exhibitorImg{
     width: 100%;
