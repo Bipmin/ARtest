@@ -43,6 +43,19 @@
                     <!-- コンテンツの写真-->
                     <a-image width="0.7" height="0.5" class="exhibitorImg" rotation="-100 0 0"  position="0.3 0.1 -0.4" src="./images/VRPA_1.jpg" alt="contents"></a-image>
                 </a-marker>
+
+                <a-marker preset="" url="./marker/pattern-VRPA_1.patt">
+                        <!-- 展示者名 -->
+                        <a-plane width="0.8" height="0.2" position="0.2 0.1 -0.95" material="shader: html; target: #element1" rotation="-100 0 0"></a-plane>
+                        <!-- コンテンツ名 -->
+                        <a-plane width="0.8" height="0.2" position="-0.3 -0.02 -0.3" material="shader: html; target: #element2" rotation="-100 0 0"></a-plane>
+                        <!-- コンテンツの詳細 -->
+                        <a-plane width="1.3" height="" position="0 0.1 0.8" material="shader: html; target: #element3" rotation="-110 0 0"></a-plane>
+                        <!-- 展示者写真-->
+                        <a-image width="0.4" height="0.5" class="exhibitorImg" rotation="-90 0 0"  position="-0.3 -0.03 -0.7" src="./images/VRPA_1.jpg" alt="contents"></a-image>
+                        <!-- コンテンツの写真-->
+                        <a-image width="0.7" height="0.5" class="exhibitorImg" rotation="-100 0 0"  position="0.3 0.1 -0.4" src="./images/VRPA_1.jpg" alt="contents"></a-image>
+                    </a-marker>
             <!-- カメラ起動 -->
             <a-entity camera></a-entity>
             <div class="Frame_box pcWindow">
