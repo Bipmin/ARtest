@@ -39,6 +39,12 @@
     overflow-y : visible;
 }
 
+.stash{
+    background-color: #fff;
+    width: 1000%;
+    height: 1000%;
+}
+
 .exhibitorImg{
     width: 100%;
     height: 10px;
