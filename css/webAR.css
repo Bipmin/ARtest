@@ -27,7 +27,7 @@
 
 .contentsText{
     width: 4000px;
-    font-size: 1500%;
+    font-size: 1200%;
     min-height: 500px;
     border: 20px solid ;
     border-radius: 4rem;
@@ -59,13 +59,12 @@
     color: #fff;
 }
 
-
 .Frame{
     line-height: 45px;
     display: inline-block;
     font-size: 1rem;
     width: 30%;
-    padding: .6rem 0;
+    line-height: 65px;
     margin: 0 0 0 5%;
     border: 1.5px solid #ff0013;
     border-radius: 0.6rem;
@@ -75,8 +74,8 @@
     z-index: 99;
 }
 
-.detailsMargin{
-    margin: 0 0 0 10px;
+.MarginLeft{
+    margin-left: 10px;
 }
 
 .Frame>a{
@@ -86,17 +85,19 @@
     color: #ff0013;
 }
 
+.like_button_elem{
+    display: inline-block;
+}
+
 .sendLikedButton {
-    margin: 0 0 0 20px;
-    width: 80px;
+    width: 25%;
     height: 80px;
     display: inline-block;
     z-index: 99;
 }
 
 .sendNotLikedButton {
-    margin: 0 0 0 20px;
-    width: 70px;
+    width: 25%;
     height: 70px;
     display: inline-block;
     z-index: 99;
@@ -104,4 +105,11 @@
 
 .displayNone {
     display: none;
+}
+
+@media screen and (min-width: 767px) { /*ウィンドウ幅が767px以上の場合に適用*/
+    .pcWindow{
+    margin: 0 auto;
+    width: 450px;
+}
 }

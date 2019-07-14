@@ -35,9 +35,9 @@
                     <!-- 展示者名 -->
                     <a-plane width="0.7" height="0.2" position="0.2 0.2 -0.7" material="shader: html; target: #element1" rotation="-100 0 0"></a-plane>
                     <!-- コンテンツ名 -->
-                    <a-plane width="0.7" height="0.2" position="-0.2 0.2 -0.2" material="shader: html; target: #element2" rotation="-100 0 0"></a-plane>
+                    <a-plane width="0.7" height="0.2" position="-0.3 0.2 -0.2" material="shader: html; target: #element2" rotation="-100 0 0"></a-plane>
                     <!-- コンテンツの詳細 -->
-                    <a-plane width="2" height="" position="0 0.3 0.8" material="shader: html; target: #element3" rotation="-100 0 0"></a-plane>
+                    <a-plane width="2" height="" position="0 0.1 0.8" material="shader: html; target: #element3" rotation="-100 0 0"></a-plane>
                     <!-- 展示者写真-->
                     <a-image width="0.4" height="0.5" class="exhibitorImg" rotation="-90 0 0"  position="-0.3 -0.05 -0.5" src="./images/VRPA_1.jpg" alt="contents"></a-image>
                     <!-- コンテンツの写真-->
@@ -45,21 +45,20 @@
                 </a-marker>
             <!-- カメラ起動 -->
             <a-entity camera></a-entity>
-
-            <div class="Frame_box">
+            <div class="Frame_box pcWindow">
                 <div class="Frame color" ontouchstart="">
                     <td>
                         <a href="https://bipmin.github.io/ARtest/Details.html" class="color">コメント一覧</a>
                     </td>
                 </div>
-                <div class="Frame detailsMargin color" ontouchstart="">
+                <div class="Frame MarginLeft color" ontouchstart="">
                     <td>
                         <a href="https://bipmin.github.io/ARtest/Details.html" class="color">明細ページ</a>
                     </td>
                 </div>
                     <td>
-                        <input type="image"  class="sendLikedButton displayNone" src="./images/heart.png" />
-                        <input type="image"  class="sendNotLikedButton" src="./images/heart.png" />
+                        <input type="image"  class="sendLikedButton MarginLeft" src="./images/heart.png" />
+                        <input type="image"  class="sendNotLikedButton displayNone" src="./images/heart.png" />
                     </td>
             </div>
             <!-- <a-entity class="link-object" geometry="primitive: plane; width: 1.5 height: 1.5" position="0 -200 0" material="shader: html; target: #commentFrame" rotation="-90 0 0" style="z-index: 80;"></a-entity> -->
