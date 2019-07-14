@@ -9,7 +9,7 @@
         <!-- A-Frame ライブラリの読み込み -->
         <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
         <!-- AR.js ライブラリの読み込み -->
-        <!--<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>-->
+        <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
         <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
         <!-- HTML要素をA-Frame内に配置するスクリプト -->
         <script src="./js/aframe-html-shader.min.js"></script>
@@ -34,7 +34,7 @@
         </a-assets>
     <!-- ARマーカー上になにを展開するかを書く -->
 
-    <a-marker-camera type="pattern" patternurl="pattern-marker.patt">
+    <a-marker type="pattern" patternurl="pattern-marker.patt">
             <!-- 展示者名 -->
             <a-plane width="0.8" height="0.2" position="0.2 0.1 -0.95" material="shader: html; target: #element1" rotation="-100 0 0"></a-plane>
             <!-- コンテンツ名 -->
@@ -45,7 +45,8 @@
             <a-image width="0.4" height="0.5" class="exhibitorImg" rotation="-90 0 0"  position="-0.3 -0.03 -0.7" src="./images/VRPA_1.jpg" alt="contents"></a-image>
             <!-- コンテンツの写真-->
             <a-image width="0.7" height="0.5" class="exhibitorImg" rotation="-100 0 0"  position="0.3 0.1 -0.4" src="./images/VRPA_1.jpg" alt="contents"></a-image>
-    </a-marker-camera>
+    </a-marker>
+
     <a-marker preset="hiro">
                     <!-- 展示者名 -->
                     <a-plane width="0.8" height="0.2" position="0.2 0.1 -0.95" material="shader: html; target: #element1" rotation="-100 0 0"></a-plane>
@@ -58,14 +59,12 @@
                     <!-- コンテンツの写真-->
                     <a-image width="0.7" height="0.5" class="exhibitorImg" rotation="-100 0 0"  position="0.3 0.1 -0.4" src="./images/VRPA_1.jpg" alt="contents"></a-image>
                 </a-marker>
-
-        
             <!-- カメラ起動 -->
             <a-entity camera></a-entity>
             <div class="Frame_box pcWindow">
                 <div class="Frame color" ontouchstart="">
                     <td>
-                        <a href="https://bipmin.github.io/ARtest/Details.html" class="color">コ</a>
+                        <a href="https://bipmin.github.io/ARtest/Details.html" class="color"></a>
                     </td>
                 </div>
                 <div class="Frame MarginLeft color" ontouchstart="">
