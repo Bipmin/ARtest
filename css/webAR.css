@@ -27,13 +27,13 @@
 
 .contentsText{
     width: 2000px;
-    font-size: 800%;
+    font-size: 700%;
     min-height: 500px;
     border: 20px solid ;
     border-radius: 4rem;
     background-color: #fff;
     word-wrap:break-word;
-    line-height: 5.5rem;
+    line-height: 6.5rem;
     text-align: left;
     padding: 10px 0px 5px 10px;
     overflow-y : visible;
