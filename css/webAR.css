@@ -29,11 +29,11 @@
     width: 2000px;
     font-size: 500%;
     min-height: 500px;
-    border: 20px solid ;
+    border: 10px solid ;
     border-radius: 4rem;
     background-color: #fff;
     word-wrap:break-word;
-    line-height: 7.5rem;
+    line-height: 5.5rem;
     text-align: left;
     padding: 10px 0px 5px 10px;
     overflow-y : visible;
