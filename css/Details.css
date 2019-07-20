@@ -70,12 +70,16 @@ footer{
   line-height: 20px;
 }
 
+.VRacademyLink_box{
+  text-align: center;
+}
+
 .VRacademyLink{
+  display: inline-block;
   line-height: 21px;
   height: 20px;
   font-size: .8rem;
   width: 40%;
-  margin: 0 auto ;
   border: 1.5px solid #fff;
   border-radius: 1rem;
   text-align: center;
@@ -259,6 +263,11 @@ footer{
 .bottomBotann:active{
   background-color: #ff0013;
   color: #fff;
+}
+
+.VRacademyLink:active{
+  background-color: #fff;
+  color: #ff0013;
 }
 
 @media screen and (min-width: 767px) { /*ウィンドウ幅が767px以上の場合に適用*/
