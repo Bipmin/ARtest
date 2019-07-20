@@ -23,61 +23,47 @@
         </div>
         <!-- コンテンツの詳細 -->
         <div id="element3" style="position: fixed; z-index: -4; overflow: hidden">
-            <p class="contentsText">素晴らしいコンテンツを開発しました</p>
+            <p class="contentsText">素晴らしいコンテンツを開発しました、ぜひ楽しんでください。えええええええええええええええええええええええええええええええええええええええええええええええええええええええええううううううううううううううううううううううううううううううううううううううううううううううううううううううううあああああああああああああああああああああああああああああああああ</p>
         </div>
         <div style="position: fixed; z-index: -3; overflow: hidden" class="stash" >
         </div>
     <!-- A-FrameStart -->
-    <!-- <a-scene embedded arjs="debugUIEnabled:false;trackingMethod:best;patternRatio:0.70;" vr-mode-ui="enabled: false"></a-scene> -->
-    <a-scene embedded arjs="debugUIEnabled:false; patternRatio=0.90">
-    <!-- <a-scene embedded arjs="debugUIEnabled:false;trackingMethod:best;" vr-mode-ui="enabled: false"> -->
+    <!-- <a-scene embedded arjs="debugUIEnabled:false;trackingMethod:best;patternRatio:0.90;" vr-mode-ui="enabled: false"></a-scene> -->
+    <a-scene embedded arjs="debugUIEnabled:false;trackingMethod:best;" vr-mode-ui="enabled: false">
         <!-- オブジェクトファイルとマテリアルファイルを読み込む -->
         <a-assets>
         </a-assets>
     <!-- ARマーカー上になにを展開するかを書く -->
     <a-marker type="pattern" url="./marker/pattern-top.patt">
-        <!-- 展示者名 -->
-        <a-plane width="0.9" height="0.2" position="0.5 0.1 -0.65" material="shader: html; target: #element1" rotation="-100 0 0"></a-plane>
-        <!-- コンテンツ名 -->
-        <a-plane width="0.9" height="0.2" position="0.5 0.1 -0.4" material="shader: html; target: #element2" rotation="-100 0 0"></a-plane>
-        <!-- コンテンツの詳細 -->
-        <a-plane width="1.1" height="0.5" position="0.5 0.1 0.8" material="shader: html; target: #element3" rotation="-100 0 0"></a-plane>
-        <!-- 展示者写真-->
-        <a-image width="0.8" height="1.3" rotation="-90 0 0"  position="-0.3 -0.1 -0.08" src="./images/VRPA_1.jpg" alt="contents"></a-image>
-        <!-- コンテンツの写真-->
-        <a-image width="0.85" height="0.6" class="exhibitorImg" rotation="-90 0 0"  position="0.5 0.1 0.07" src="./images/VRPA_1.jpg" alt="contents"></a-image>
-</a-marker>
-<a-marker type="pattern" url="./marker/pattern-VRPA_1.patt">
-    <!-- 展示者名 -->
-    <a-plane width="0.9" height="0.2" position="0.5 0.1 -0.65" material="shader: html; target: #element1" rotation="-100 0 0"></a-plane>
-    <!-- コンテンツ名 -->
-    <a-plane width="0.9" height="0.2" position="0.5 0.1 -0.4" material="shader: html; target: #element2" rotation="-100 0 0"></a-plane>
-    <!-- コンテンツの詳細 -->
-    <a-plane width="1.1" height="0.5" position="0.5 0.1 0.8" material="shader: html; target: #element3" rotation="-100 0 0"></a-plane>
-    <!-- 展示者写真-->
-    <a-image width="0.8" height="1.3" rotation="-90 0 0"  position="-0.3 -0.1 -0.08" src="./images/VRPA_1.jpg" alt="contents"></a-image>
-    <!-- コンテンツの写真-->
-    <a-image width="0.85" height="0.6" class="exhibitorImg" rotation="-90 0 0"  position="0.5 0.1 0.07" src="./images/VRPA_1.jpg" alt="contents"></a-image>
-</a-marker>
-
-    <a-marker type="pattern" url="./marker/pattern-top2.patt">
             <!-- 展示者名 -->
             <a-plane width="0.9" height="0.2" position="0.5 0.1 -0.65" material="shader: html; target: #element1" rotation="-100 0 0"></a-plane>
             <!-- コンテンツ名 -->
             <a-plane width="0.9" height="0.2" position="0.5 0.1 -0.4" material="shader: html; target: #element2" rotation="-100 0 0"></a-plane>
             <!-- コンテンツの詳細 -->
-            <a-plane width="1.1" height="0.5%" position="0.5 0.1 0.8" material="shader: html; target: #element3" rotation="-100 0 0"></a-plane>
+            <a-plane width="1.1" height="0.7%" position="0.5 0.1 0.8" material="shader: html; target: #element3" rotation="-100 0 0"></a-plane>
             <!-- 展示者写真-->
             <a-image width="0.8" height="1.3" rotation="-90 0 0"  position="-0.3 -0.1 -0.08" src="./images/VRPA_1.jpg" alt="contents"></a-image>
             <!-- コンテンツの写真-->
             <a-image width="0.85" height="0.6" class="exhibitorImg" rotation="-90 0 0"  position="0.5 0.1 0.07" src="./images/VRPA_1.jpg" alt="contents"></a-image>
     </a-marker>
+    <a-marker type="pattern" url="./marker/pattern-VRPA_1.patt">
+        <!-- 展示者名 -->
+        <a-plane width="0.9" height="0.2" position="0.5 0.1 -0.65" material="shader: html; target: #element1" rotation="-100 0 0"></a-plane>
+        <!-- コンテンツ名 -->
+        <a-plane width="0.9" height="0.2" position="0.5 0.1 -0.4" material="shader: html; target: #element2" rotation="-100 0 0"></a-plane>
+        <!-- コンテンツの詳細 -->
+        <a-plane width="1.1" height="0.7" position="0.5 0.1 0.8" material="shader: html; target: #element3" rotation="-100 0 0"></a-plane>
+        <!-- 展示者写真-->
+        <a-image width="0.8" height="1.3" rotation="-90 0 0"  position="-0.3 -0.1 -0.08" src="./images/VRPA_1.jpg" alt="contents"></a-image>
+        <!-- コンテンツの写真-->
+        <a-image width="0.85" height="0.6" class="exhibitorImg" rotation="-90 0 0"  position="0.5 0.1 0.07" src="./images/VRPA_1.jpg" alt="contents"></a-image>
+</a-marker>
             <!-- カメラ起動 -->
             <a-entity camera></a-entity>
             <div class="Frame_box pcWindow">
                 <div class="Frame color" ontouchstart="">
                     <td>
-                        <a href="https://bipmin.github.io/ARtest/Details.html" class="color">コメン</a>
+                        <a href="https://bipmin.github.io/ARtest/Details.html" class="color">コメント</a>
                     </td>
                 </div>
                 <div class="Frame MarginLeft color" ontouchstart="">
