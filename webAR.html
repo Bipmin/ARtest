@@ -26,16 +26,21 @@
             <!-- boxのテンプレート -->
             <a-box depth="1" height="1" width="1" position="0 0 0" src="./images/VRPA_1.jpg" >
             <!-- <a-animation attribute="position" from="0 0 0" to="0 2 0" dur="5000" repeat="indefinite"> -->
-            <a-animation attribute="position" from="0 0 0" to="0 2 0" dur="5000" repeat="indefinite"
+            <a-animation
             attribute="rotation"
             from="20 0 0"
             to="20 360 0"
             direction="alternate"
-            dur="4000"
+            dur="3000"
             repeat="indefinite"
             easing="ease">>
             </a-animation>
             <!-- </a-animation> --></a-box>
+    </a-marker>
+    <a-marker type="pattern" url="./marker/pattern-top.patt">
+    <!-- boxのテンプレート -->
+    <a-box depth="1" height="1" width="1" position="0 0 0">
+    
     </a-marker>
             <!-- カメラ起動 -->
             <a-entity camera></a-entity>
