@@ -14,32 +14,6 @@
 <!-- HTML要素をA-Frame内に配置するスクリプト -->
 <script src="./js/aframe-html-shader.min.js"></script>
 
-
-<body>
-    <!-- A-FrameStart -->
-    <!-- <a-scene embedded arjs="debugUIEnabled:false;trackingMethod:best;patternRatio:0.90;" vr-mode-ui="enabled: false"></a-scene> -->
-    <a-scene embedded arjs="debugUIEnabled:false;trackingMethod:best;" vr-mode-ui="enabled: false">
-        <!-- オブジェクトファイルとマテリアルファイルを読み込む -->
-        <a-assets>
-        </a-assets>
-    <!-- ARマーカー上になにを展開するかを書く -->
-    <a-marker preset="hiro">
-            <a-entity cursor="rayOrigin: mouse"></a-entity>
-            <a-entity laser-controls="hand: right" raycaster="far: 50;"></a-entity>
-            <!-- boxのテンプレート -->
-            <a-box position="0 0 0" depth="1" color="#333" collide></a-box>
-            <a-animation attribute="rotation" from="20 0 0" to="20 360 0" direction="alternate" dur="3000" repeat="indefinite" easing="ease">>
-            </a-animation></a-box>
-    </a-marker>
-    <a-marker type="pattern" url="./marker/pattern-top.patt">
-    <!-- boxのテンプレート -->
-    <a-box depth="1" height="1" width="1" position="0 0 0">
-    </a-marker>
-            <!-- カメラ起動 -->
-            <a-entity camera></a-entity>
-    </a-scene>
-    <!-- A-FrameEnd -->
-</body>
 <script>
         AFRAME.registerComponent('collide', {
           init: function() {
@@ -69,4 +43,30 @@
           }
         });
 </script>
+<body>
+    <!-- A-FrameStart -->
+    <!-- <a-scene embedded arjs="debugUIEnabled:false;trackingMethod:best;patternRatio:0.90;" vr-mode-ui="enabled: false"></a-scene> -->
+    <a-scene embedded arjs="debugUIEnabled:false;trackingMethod:best;" vr-mode-ui="enabled: false">
+        <!-- オブジェクトファイルとマテリアルファイルを読み込む -->
+        <a-assets>
+        </a-assets>
+    <!-- ARマーカー上になにを展開するかを書く -->
+    <a-marker preset="hiro">
+            <a-entity cursor="rayOrigin: mouse"></a-entity>
+            <a-entity laser-controls="hand: right" raycaster="far: 50;"></a-entity>
+            <!-- boxのテンプレート -->
+            <a-box position="0 0 0" depth="1" color="#333" collide></a-box>
+            <a-animation attribute="rotation" from="20 0 0" to="20 360 0" direction="alternate" dur="3000" repeat="indefinite" easing="ease">>
+            </a-animation></a-box>
+    </a-marker>
+    <a-marker type="pattern" url="./marker/pattern-top.patt">
+    <!-- boxのテンプレート -->
+    <a-box depth="1" height="1" width="1" position="0 0 0">
+    </a-marker>
+            <!-- カメラ起動 -->
+            <a-entity camera></a-entity>
+    </a-scene>
+    <!-- A-FrameEnd -->
+</body>
+
 </html>
