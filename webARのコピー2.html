@@ -11,7 +11,7 @@
           this.el.addEventListener('click', this.onClick);
         },
         interactiveAnimations: function() {
-           this.el.setAttribute('animation__click', 'property: scale; to:; startEvents: click; dur:200');
+           this.el.setAttribute('animation__click', 'property: scale; to: 1 1 1; startEvents: click; dur:500');
         },
         onClick: function(e) {
           var createEffect = function(point, particleAge) {

@@ -21,7 +21,7 @@
             this.el.addEventListener('click', this.onClick);
           },
           interactiveAnimations: function() {
-             this.el.setAttribute('animation__click', 'property: scale; to:; startEvents: click; dur:200');
+             this.el.setAttribute('animation__click', 'property: scale; to: 2 2 2; startEvents: click; dur:200');
           },
           onClick: function(e) {
             var createEffect = function(point, particleAge) {
@@ -54,6 +54,7 @@
     <a-marker preset="hiro">
             <a-entity cursor="rayOrigin: mouse"></a-entity>
             <a-entity laser-controls="hand: right" raycaster="far: 50;"></a-entity>
+            <a-entity position="0 2.25 -15" particle-system="preset: dust; texture: ./images/redheart.png"></a-entity>
             <!-- boxのテンプレート -->
             <a-box depth="1" height="1" width="1" position="0 0 0" src="./images/VRPA_1.jpg"  collide>
             <a-animation attribute="rotation" from="20 0 0" to="20 360 0" direction="alternate" dur="3000" repeat="indefinite" easing="ease">>
