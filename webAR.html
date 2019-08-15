@@ -13,36 +13,9 @@
 <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
 <!-- HTML要素をA-Frame内に配置するスクリプト -->
 <script src="./js/aframe-html-shader.min.js"></script>
+<script src="./js/effect.js"></script>
 
-<script>
-        AFRAME.registerComponent('collide', {
-          init: function() {
-            this.interactiveAnimations();
-            this.el.addEventListener('click', this.onClick);
-          },
-          interactiveAnimations: function() {
-            this.el.setAttribute('animation__click', 'property:rotation; from:0 0 0; to: 0 360 0;  startEvents: click; dur:500');
-          },
-          onClick: function(e) {
-            var createEffect = function(point, particleAge) {
-              var pointStr = point.x + ' ' + point.y + ' ' + point.z;
-              var effect = document.createElement('a-entity');
-              effect.setAttribute('position', pointStr);
-              effect.setAttribute('raycaster', 'enabled: false');
-              effect.setAttribute('particle-system', 'preset: defolt; texture: ./images/redheart.png;color: #ff0, #ff9;maxParticleCount: 100;maxAge: ' + (particleAge / 1000) + ';velocityValue:0 -1 0; accelerationValue: 0 0.5 0; duration: 1;');
-              return effect;
-            };
-            var point = e.detail.intersection.point;
-            var particleAge = 1500;
-            var effect = createEffect(point, particleAge);
-            var scene = document.querySelector('a-scene');
-            scene.appendChild(effect);
-            setTimeout(function() {
-              scene.removeChild(effect);
-            }, particleAge);
-          }
-        });
-</script>
+
 <body>
     <!-- A-FrameStart -->
     <!-- <a-scene embedded arjs="debugUIEnabled:false;trackingMethod:best;patternRatio:0.90;" vr-mode-ui="enabled: false"></a-scene> -->
