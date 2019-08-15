@@ -11,7 +11,7 @@
           this.el.addEventListener('click', this.onClick);
         },
         interactiveAnimations: function() {
-           this.el.setAttribute('animation__click', 'property: scale; to: 1 1 1; startEvents: click; dur:500');
+           this.el.setAttribute('animation__click', 'property:rotation; from:0 0 0; to: 0 360 0;  startEvents: click; dur:500');
         },
         onClick: function(e) {
           var createEffect = function(point, particleAge) {
@@ -19,7 +19,7 @@
             var effect = document.createElement('a-entity');
             effect.setAttribute('position', pointStr);
             effect.setAttribute('raycaster', 'enabled: false');
-            effect.setAttribute('particle-system', 'color: #ff0, #ff9;maxParticleCount: 100;maxAge: ' + (particleAge / 1000) + ';velocityValue:0 -1 0; accelerationValue: 0 0.5 0; duration: 1;');
+            effect.setAttribute('particle-system', 'preset: defolt;color: #ff0, #ff9;maxParticleCount: 100;maxAge: ' + (particleAge / 1000) + ';velocityValue:0 -1 0; accelerationValue: 0 0.5 0; duration: 1;');
             return effect;
           };
           var point = e.detail.intersection.point;
@@ -38,7 +38,16 @@
     <a-scene>
       <a-entity cursor="rayOrigin: mouse"></a-entity>
       <a-entity laser-controls="hand: right" raycaster="far: 50;"></a-entity>
-      <a-box position="0 0 -10" width="2" height="1" depth="1.5" color="#333" collide></a-box>
+      <a-box position="0 0 -10" width="2" height="1" depth="1.5" color="#333" collide>
+  <a-animation attribute="rotation" from="20 0 0" to="20 360 0" direction="alternate" dur="3000" repeat="indefinite" easing="ease">
+            </a-animation></a-box>
+
+<a-box position="10 0 -10" width="2" height="1" depth="1.5" color="#333" collide>
+ <a-animation attribute="rotation"
+               dur="10000"
+               fill="forwards"
+               to="0 360 0"
+               repeat="indefinite"></a-animation></a-box>
     </a-scene>
   </body>
 </html>
