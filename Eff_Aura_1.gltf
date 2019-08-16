@@ -1,0 +1,58 @@
+{
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "Eff_Aura_1.bin",
+      "byteLength": 0
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "name": "Eff_Aura_1"
+    },
+    {
+      "children": [
+        2,
+        3
+      ],
+      "rotation": [
+        0.7071068,
+        0.0,
+        0.0,
+        -0.7071068
+      ],
+      "name": "Shock"
+    },
+    {
+      "translation": [
+        0.0,
+        0.0,
+        -0.05
+      ],
+      "name": "par1"
+    },
+    {
+      "rotation": [
+        -1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "name": "par3"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "Eff_Aura_1"
+    }
+  ]
+}
