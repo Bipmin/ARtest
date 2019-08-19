@@ -11,7 +11,6 @@
 <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
 <!-- aframe-extras読み込み -->
 <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v4.2.0/dist/aframe-extras.min.js"></script>
-<script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v6.0.0/dist/aframe-extras.min.js"></script>
 <!-- AR.js ライブラリの読み込み -->
 <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
 <!-- HTML要素をA-Frame内に配置するスクリプト -->
@@ -25,8 +24,9 @@
     <a-scene embedded arjs="debugUIEnabled:false;trackingMethod:best;" vr-mode-ui="enabled: false">
         <!-- オブジェクトファイルとマテリアルファイルを読み込む -->
         <a-assets>
+            <audio src="./trumpet1.mp3" id="decision"></audio>
         </a-assets>
-    <!-- ARマーカー上になにを展開するかを書く -->
+        <!-- ARマーカー上になにを展開するかを書く -->
     <a-marker preset="hiro">
             <a-entity cursor="rayOrigin: mouse"></a-entity>
             <!-- boxのテンプレート -->
@@ -34,16 +34,6 @@
             <a-animation attribute="rotation" from="20 0 0" to="20 360 0" direction="alternate" dur="3000" repeat="indefinite" easing="ease">>
             </a-animation></a-box>
 
-            <a-entity gltf-model="src: url(./gltf/text.gltf);"
-            animation-mixer="loop: pingpong;"
-            position="0 0 0"
-            scale="0.50 0.50 0.50"
-            shadow="receive: true"></a-entity>
-
-    </a-marker>
-    <a-marker type="pattern" url="./marker/pattern-top.patt">
-    <!-- boxのテンプレート -->
-    <a-box depth="1" height="1" width="1" position="0 0 0">
     </a-marker>
             <!-- カメラ起動 -->
             <a-entity camera></a-entity>
