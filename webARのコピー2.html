@@ -1,18 +1,54 @@
-﻿<!DOCTYPE html>
-<html>
+﻿<html>
   <head>
-    <meta charset="utf-8">
-    <title>A-Frame Particle System Component Example</title>
-    <meta name="description" content="Hello, World!">
-    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script> 
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Web VR Test</title>
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+    
+    <script>
+      AFRAME.registerComponent('collide', {
+        init: function() {
+          this.interactiveAnimations();
+          this.el.addEventListener('click', this.ontouchstart);
+        },
+        interactiveAnimations: function() {
+           this.el.setAttribute('animation__click', 'property:rotation; from:0 0 0; to: 0 360 0;  startEvents: click; dur:500');
+        },
+        onClick: function(e) {
+          var createEffect = function(point, particleAge) {
+            var pointStr = point.x + ' ' + point.y + ' ' + point.z;
+            var effect = document.createElement('a-entity');
+            effect.setAttribute('position', pointStr);
+            effect.setAttribute('raycaster', 'enabled: false');
+            effect.setAttribute('particle-system', 'preset: defolt;color: #ff0, #ff9;maxParticleCount: 100;maxAge: ' + (particleAge / 1000) + ';velocityValue:0 -1 0; accelerationValue: 0 0.5 0; duration: 1;');
+            return effect;
+          };
+          var point = e.detail.intersection.point;
+          var particleAge = 1500;
+          var effect = createEffect(point, particleAge);
+          var scene = document.querySelector('a-scene');
+          scene.appendChild(effect);
+          setTimeout(function() {
+            scene.removeChild(effect);
+          }, particleAge);
+        }
+      });
+    </script>
   </head>
   <body>
     <a-scene>
-      <!-- Particle system uses 'default' preset, setting custom colors. -->
-      <a-entity position="0 1 100" particle-system=" color: #fff100; size: 10; rotationAngle: 270; velocityValue:0 0 0; accelerationValue: 0 1 0; type: 1; "></a-entity>
-        </a-scene>
+      <a-entity cursor="rayOrigin: mouse"></a-entity>
+      <a-entity laser-controls="hand: right" raycaster="far: 50;"></a-entity>
+      <a-box position="0 0 -10" width="2" height="1" depth="1.5" color="#333" collide>
+  <a-animation attribute="rotation" from="20 0 0" to="20 360 0" direction="alternate" dur="3000" repeat="indefinite" easing="ease">
+            </a-animation></a-box>
+
+<a-box position="10 0 -10" width="2" height="1" depth="1.5" color="#333" collide>
+ <a-animation attribute="rotation"
+               dur="10000"
+               fill="forwards"
+               to="0 360 0"
+               repeat="indefinite"></a-animation></a-box>
+    </a-scene>
   </body>
 </html>
-
-Resources
