@@ -16,7 +16,7 @@ AFRAME.registerComponent('collide', {
         var effect = document.createElement('a-entity');
         effect.setAttribute('position', pointStr);
         effect.setAttribute('raycaster', 'enabled: false');
-        effect.setAttribute('particle-system', 'preset: defolt; texture: ./images/redheart.png; maxParticleCount: 100;maxAge: ' + (particleAge / 1000) + ';velocityValue:0 -1 0; accelerationValue: 0 0.5 0; duration: 0;');
+        effect.setAttribute('particle-system', 'preset: defolt; texture: ./images/redheart.png; maxParticleCount: 100;maxAge: ' + (particleAge / 1000) + ';velocityValue:0 -1 0; accelerationValue: 0 0.5 0; duration: 1 repeat: 0;');
         effect.setAttribute('sound', 'src: #decision; autoplay: true');
         return effect;
         };
