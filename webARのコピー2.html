@@ -5,12 +5,12 @@
     <title>A-Frame Particle System Component Example</title>
     <meta name="description" content="Hello, World!">
     <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script> 
-    <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script> 
+    <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
   </head>
   <body>
     <a-scene>
       <!-- Particle system uses 'default' preset, setting custom colors. -->
-      <a-entity position="0 2.25 -15" particle-system="preset:rain; color: #fff100; size: 1; rotationAngle: 360;"></a-entity>
+      <a-entity position="0 1 100" particle-system=" color: #fff100; size: 10; rotationAngle: 270; velocityValue:0 0 0; accelerationValue: 0 1 0; type: 1; "></a-entity>
         </a-scene>
   </body>
 </html>
