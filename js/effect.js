@@ -6,6 +6,7 @@ AFRAME.registerComponent('collide', {
     
     //クリックしたオブジェクトを回転させる
     interactiveAnimations: function() {
+        this.el.setAttribute('animation__click', 'property:rotation; from:0 0 0; to: 0 360 0;  startEvents: click; dur:500 repeat: 0');
     },
     
     //クリック位置の取得とパーティクルの設定
@@ -15,7 +16,7 @@ AFRAME.registerComponent('collide', {
         var effect = document.createElement('a-entity');
         effect.setAttribute('position', pointStr);
         effect.setAttribute('raycaster', 'enabled: false');
-        effect.setAttribute('particle-system', 'preset: defolt; texture: ./images/redheart.png; maxParticleCount: 100;maxAge: ' + (particleAge / 1000) + ';velocityValue:0 -1 0; accelerationValue: 0 0.5 0; duration: 1;');
+        effect.setAttribute('particle-system', 'preset: defolt; texture: ./images/redheart.png; maxParticleCount: 100;maxAge: ' + (particleAge / 1000) + ';velocityValue:0 -1 0; accelerationValue: 0 0.5 0; duration: 0;');
         effect.setAttribute('sound', 'src: #decision; autoplay: true');
         return effect;
         };
