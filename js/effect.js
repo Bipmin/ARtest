@@ -6,7 +6,7 @@ AFRAME.registerComponent('collide', {
     
     //クリックしたオブジェクトを回転させる
     interactiveAnimations: function() {
-        this.el.setAttribute('animation__click', 'property:rotation; from:0 0 0; to: 0 360 0;  startEvents: click; dur:500 repeat: 0');
+        this.el.setAttribute('animation__click', 'property:rotation; from:; to: 0 360 0;  startEvents: click; dur:500 repeat: 0');
     },
     
     //クリック位置の取得とパーティクルの設定
