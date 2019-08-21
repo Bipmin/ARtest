@@ -9,7 +9,7 @@
       AFRAME.registerComponent('collide', {
         init: function() {
           this.interactiveAnimations();
-          this.el.addEventListener('click', this.ontouchstart);
+          this.el.addEventListener('click', this.onClick);
         },
         interactiveAnimations: function() {
            this.el.setAttribute('animation__click', 'property:rotation; from:0 0 0; to: 0 360 0;  startEvents: click; dur:500');
