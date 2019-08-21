@@ -31,3 +31,4 @@ onClick: function(e) {
     }, particleAge);
 }
 });
+return null;
