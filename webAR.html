@@ -16,6 +16,38 @@
 <!-- HTML要素をA-Frame内に配置するスクリプト -->
 <script src="./js/aframe-html-shader.min.js"></script>
 <script src="./js/effect.js"></script>
+<script>
+    AFRAME.registerComponent('collide', {
+    init: function() {
+    this.interactiveAnimations();
+    this.el.addEventListener('click', this.onClick);
+},
+//クリックしたオブジェクトを回転させる
+interactiveAnimations: function() {
+    this.el.setAttribute('animation__click', 'property:rotation; from:0 0 0; to: 0 360 0;  startEvents: click; dur:500');
+},
+//クリック位置の取得とパーティクルの設定
+onClick: function(e) {
+    var createEffect = function(point, particleAge) {
+    var pointStr = point.x + ' ' + point.y + ' ' + point.z;
+    var effect = document.createElement('a-entity');
+    effect.setAttribute('position', pointStr);
+    effect.setAttribute('raycaster', 'enabled: false');
+    effect.setAttribute('particle-system', 'preset: defolt; texture: /images/eventer/like.png; maxParticleCount: 100;maxAge: ' + (particleAge / 1000) + ';velocityValue:0 -1 0; accelerationValue: 0 0.5 0; duration: 1;');
+    return effect;
+    };
+    //パーティクルを表示させる
+    var point = e.detail.intersection.point;
+    var particleAge = 1500;
+    var effect = createEffect(point, particleAge);
+    var scene = document.querySelector('a-scene');
+    scene.appendChild(effect);
+    setTimeout(function() {
+    scene.removeChild(effect);
+    }, particleAge);
+}
+});
+</script>
 
 
 <body>
@@ -26,7 +58,7 @@
         <!-- ARマーカー上になにを展開するかを書く -->
     <a-marker preset="hiro">
             <!-- boxのテンプレート -->
-            <a-box depth="2" height="2" width="2" position="0 0 0" src="./images/VRPA_1.jpg"  collide>
+            <a-box depth="1" height="1" width="1" position="0 0 0" src="./images/VRPA_1.jpg"  collide>
             <a-animation attribute="rotation" from="20 0 0" to="20 360 0" direction="alternate" dur="3000" repeat="indefinite" easing="ease">>
             </a-animation></a-box>
 
