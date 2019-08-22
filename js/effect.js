@@ -1,7 +1,8 @@
+var mytap = window.ontouchstart===null?"touchstart":"click";
 AFRAME.registerComponent('collide', {
     init: function() {
     this.interactiveAnimations();
-    this.el.addEventListener('click', this.onClick);
+    this.el.addEventListener('mytap', this.onClick);
 },
 
 //クリックしたオブジェクトを回転させる
