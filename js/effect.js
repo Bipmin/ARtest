@@ -1,7 +1,7 @@
 AFRAME.registerComponent('collide', {
     init: function() {
     this.interactiveAnimations();
-    this.el.addEventListener('click', this.onClick, { once: true});
+    this.el.addEventListener('click', this.onClick);
 },
 
 //クリックしたオブジェクトを回転させる
@@ -31,4 +31,3 @@ onClick: function(e) {
     }, particleAge);
 }
 });
-return null;
