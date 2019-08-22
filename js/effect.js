@@ -1,7 +1,7 @@
 AFRAME.registerComponent('collide', {
     init: function() {
     this.interactiveAnimations();
-    this.el.addEventListener('click', this.onClick);
+    this.el.addEventListener('touchstart', this.onClick);
 },
 
 //クリックしたオブジェクトを回転させる
