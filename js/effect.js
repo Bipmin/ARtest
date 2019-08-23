@@ -23,7 +23,7 @@ AFRAME.registerComponent('collide', {
 
         //パーティクルを表示させる
         var point = e.detail.intersection.point;
-        var particleAge = 1500;
+        var particleAge = 3000;
         var effect = createEffect(point, particleAge);
         var scene = document.querySelector('a-scene');
         scene.appendChild(effect);
