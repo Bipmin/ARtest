@@ -1,0 +1,265 @@
+＠import url('https://fonts.googleapis.com/css?family=Quicksand:300');
+
+:root {
+  --colorBlue: #1779ff;
+}
+
+body{
+  background: #000;
+  clear: rgba(119,207,186,1.00);
+  font-family: 'Quicksand' , sans-serif;
+}
+
+.header_top{
+  position: fixed;
+  z-index: 10000;
+  width: 100%;
+}
+
+.headerLogo{
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  padding-top: 50px;
+}
+
+p{
+  color: var(--colorBlue);
+}
+
+.ityped_position{
+  margin-top: 100px;
+  margin-left: 450px;
+}
+
+.ityped{
+  font-size: 3rem;
+}
+
+.menu_box{
+  position: relative;
+  margin-top: 150px;
+}
+
+.link_positionA{
+  position: absolute;
+  left: 250px;
+}
+
+.menu_boxA{
+  width: 100%;
+}
+
+.link_positionB{
+  position: absolute;
+  left: 500px;
+  }
+
+.link_positionC{
+  position: absolute;
+  left: 750px;
+  bottom: 220px;
+}
+
+.link_positionD{
+  position: absolute;
+  left: 1000px;
+  bottom: 220px;
+}
+
+.hexagonA {
+  width: 190px;
+  height: 110px;
+  display: block;
+  position: relative;
+  background: #000;
+  transition: all 0.2s linear;
+  border-left: 0.1rem solid #1779ff;
+  border-right: 0.1rem solid #1779ff;
+}
+
+.hexagonA span {
+  width: 100%;
+  height: 90px;
+  line-height: 90px;
+  color: #000;
+  text-align: center;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+.hexagonA:before,
+.hexagonA:after {
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #000;
+  transition: all 0.2s linear;
+  z-index: 0;
+  border-left: 0.1rem solid #1779ff;
+  border-right: 0.1rem solid #1779ff;
+}
+
+.hexagonA:before {
+  transform: rotate(60deg);
+}
+
+.hexagonA:after {
+  transform: rotate(-60deg);
+}
+
+.hexagonA:hover,
+.hexagonA:hover:before,
+.hexagonA:hover:after {
+  background: #A7F8FF ;
+  transform: scale(1);
+}
+
+.neon{
+  margin: 0;
+  position: absolute;
+  color: #A7F8FF  ;
+  text-shadow: 0 0 20px #1779ff;
+  padding: 0 20px;
+}
+
+.select_neon{
+  margin: 0;
+  position: absolute;
+  color: #A7F8FF;
+  text-shadow: 0 0 20px #1779ff;
+  padding: 5px 20px 0 20px;
+  font-size: 22px;
+}
+
+.select_neon:hover{
+  color: #000 ;
+}
+
+#particles{
+  position: absolute;
+  width:100%;
+  height:110%;
+  z-index: -100;
+}
+
+.borderline{
+background: linear-gradient(to left, #1779ff,#0c002b);
+animation: animate 2s linear infinite;
+width: 100%;
+height: 3px;
+box-shadow: 20px 0 20px #1779ff;
+}
+
+@keyframes animate
+{
+  0%
+  {
+    transform: translateX(-100%);
+  }
+  100%
+  {
+    transform: translateX(100%);
+  }
+}
+
+.profilse_box{
+  background: rgba(0,0,0,0.7);
+}
+
+.profilse_img{
+  margin-top: 100px;
+  width: 180px;
+  height: 300px;
+}
+
+.footer_item{
+  margin-top: 100px;
+}
+
+.copyrightText{
+  position: absolute;
+  right: 0px;
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+  margin-top: 30px;
+}
+
+
+@media screen and (max-width:480px) { /*ウィンドウ幅が767px以上の場合に適用*/
+
+.menu_box{
+  position: relative;
+  margin-top: 150px;
+}
+
+.header_top{
+  height: 40px;
+}
+
+.headerLogo{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+#particles{
+  position: absolute;
+  width:100%;
+  height:180%;
+  z-index: -100;
+}
+
+.ityped_position{
+  margin-top: 100px;
+  margin-left: 10px;
+}
+
+.ityped{
+  font-size: 1.7rem;
+}
+
+main{
+  height: 1200px;
+}
+
+.link_positionA{
+  left: 25%;
+}
+
+.link_positionB{
+  left: 25%;
+  top: 150px;
+}
+
+.link_positionC{
+  left: 25%;
+  top: 300px;
+}
+
+.link_positionD{
+  left: 25%;
+  top: 450px;
+}
+
+.borderline{
+  background: linear-gradient(to left, #1779ff,#0c002b);
+  animation: animate 2s linear infinite;
+  width: 100%;
+  height: 3px;
+  box-shadow: 20px 0 20px #1779ff;
+}
+
+.copyrightText{
+  position: absolute;
+  right: 0px;
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+  margin-top: 60px;
+}
+
+}
