@@ -29,7 +29,7 @@ p{
 
 .ityped_position{
   margin-top: 100px;
-  margin-left: 450px;
+  margin-left: 35%;
 }
 
 .ityped{
@@ -43,7 +43,7 @@ p{
 
 .link_positionA{
   position: absolute;
-  left: 250px;
+  left: 18%;
 }
 
 .menu_boxA{
@@ -52,18 +52,18 @@ p{
 
 .link_positionB{
   position: absolute;
-  left: 500px;
+  left: 35%;
   }
 
 .link_positionC{
   position: absolute;
-  left: 750px;
+  left: 52%;
   bottom: 220px;
 }
 
 .link_positionD{
   position: absolute;
-  left: 1000px;
+  left: 69%;
   bottom: 220px;
 }
 
