@@ -18,9 +18,10 @@
         <!-- スタイルシートの読み込み -->
         <link rel="stylesheet" href="./css/reset.css">
         <link rel="stylesheet" href="./css/hamburger.css">
+        <link rel="stylesheet" href="./css/common.css">
         <link rel="stylesheet" href="./css/top.css">
-        <link rel="stylesheet" href="./css/RotatingLine.css">
         <link rel="stylesheet" href="./css/footer.css">
+        <link rel="stylesheet" href="./css/profilse.css">
     </head>
     <body>
         <header>
@@ -41,11 +42,11 @@
             </div>
             <div class="menu_box">
                 <div>
-                    <a href="#" class="hexagonA link_positionA">
+                    <a href="#profilse" class="hexagonA link_positionA">
                     <span><p class="select_neon menu_boxA" data-text="test_text">自己紹介</p></span></a>
                 </div>
                 <div>
-                    <a href="#" class="hexagonA link_positionB">
+                    <a href="./contents.html" class="hexagonA link_positionB">
                     <span><p class="select_neon menu_boxA" data-text="test_text">コンテンツ</p></span></a>
                 </div>
                 <div>
@@ -57,10 +58,46 @@
                     <span><p class="select_neon menu_boxA" data-text="test_text">お問い合わせ</p></span></a>
                 </div>
             </div>
+            <div class="borderline"></div>
+            <div id="profilse" class="profilse">
+                <div class="profilse_box">
+                    <div class="profilse_face">
+                        <img class="profilse_img" src="./images/S__7004176.jpg">
+                    </div>
+                    <div class="profilse_status neon">
+                        <ul>
+                            <li>name<p>藤田 亮介</p></li>
+                            <li>age<p>24</p></li>
+                            <li>birthday<p>12月5日</p></li>
+                            <li>address<p>東京都大田区</p></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="profilse_History neon">
+                    <ul>
+                        <li>History<p>1994年12月5日静岡県御殿場市にて生を受ける。</p>
+                        <p>中央歯科衛生士調理製菓専門学校卒業後、静岡県熱海市にあるホテルにて製菓の道を歩む。</p></li>
+                        <li>skill set<p>PHP/Laravel：アプリケーション制作、
+                                C#/ASP.NET :アプリケーション制作、
+                                HTML/CSS : Webページ制作、サイト編集、
+                                JavaScript/jQuery : 動的なWebページ作成、
+                                python/Robot Framework : テスト自動化、
+                                unity : VRコンテンツの作成、ARkitを用いたARコンテンツの作成、スマホアプリ開発（iOS）、
+                                UE4 : 簡単なゲームを作成（ブループリント）、
+                                DB : MySQL、PostgreSQL、
+                                やる気、根気、勇気</p></li>
+                        <li>Anime have seen<p>まどかマギカ、ハッピーシュガーライフ、ノーゲームノーライフ、SAO、ジョジョの奇妙な冒険etc.</p></li>
+                        <li>Games ever played<p>ダークソウル、モンハンシリーズetc.</p></li>
+                        <li class="Details">Details<p>血液型：A、身長：172、体重：58、血圧：130/80</p></li>
+                    </ul>
+                </div>
+            </div>
         <div class="profilse"></div>
         <script src="js/ityped.js"></script>
         <script src="js/particles.js"></script>
         <script src="js/particles_setting.js"></script>
+        <script src="js/scroll-out.js"></script>
+        <script type="text/javascript">ScrollOut({targets: 'img,li,p,a'})</script>
         </main>
         <footer>
         <div class="borderline"></div>
